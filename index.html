@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WIN Connect, Fresh Eyes</title>
+<meta name="description" content="A plain-language SWOT, front-door review and 90-day plan for WIN Connect, by Alisha Chaudhari.">
+<meta property="og:title" content="WIN Connect, Fresh Eyes">
+<meta property="og:description" content="A plain-language SWOT, front-door review and 90-day plan for WIN Connect, by Alisha Chaudhari.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: same system as the GutIQ pitch site. One editorial column (max 1120px); sections alternate charcoal and ivory
+   so the page reads in chapters; turmeric is the single accent; emerald only for the "principle" boxes.
+   A deliberate single look (dark-first with ivory chapters), so every colour is set explicitly per section. */
+:root{
+  --accent:#E3A93B; --accent-ink:#15181D;
+  --bg:#15181D; --bg-2:#1B1F25; --card:#1F242B; --line:#2E343D; --line-hi:#4A5360;
+  --fg:#F5F4EF; --muted:#B6BBC3; --dim:#8C929B; --soft:#D9DCE1; --sky:#E3A93B;
+  --good:#6FD3A8; --warn:#F2C46B; --bad:#F28B82; --cool:#8EC5E8;
+  --panel:#FBFAF6; --panel-line:#E1DED5; --panel-ink:#15181D; --panel-muted:#535961;
+  --nav:rgba(21,24,29,.92);
+  --display:"Fraunces", Georgia, serif; --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --mono:"JetBrains Mono", Consolas, monospace;
+  color-scheme:dark;
+}
+.light{
+  --bg:#F5F4EF; --bg-2:#EDEBE4; --card:#FFFFFF; --line:#E1DED5; --line-hi:#C4BFB1;
+  --fg:#15181D; --muted:#535961; --dim:#767B83; --soft:#3A4048; --sky:#9A5F0C;
+  --good:#1F7A5C; --warn:#9A5F0C; --bad:#C53030; --cool:#2B6CB0;
+}
+.accentsec{--bg:#E3A93B; --fg:#15181D; --muted:#3B2F14; --soft:#2A2210; --sky:#15181D; --line:#C88F25}
+*{box-sizing:border-box}
+body{margin:0;background:#15181D;color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+section,footer{background:var(--bg);color:var(--fg)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(24px, env(safe-area-inset-left, 0px));padding-right:max(24px, env(safe-area-inset-right, 0px))}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:-.5px}
+h1{font-size:clamp(42px,6.6vw,84px);line-height:1.03}
+h1 em{font-style:italic;color:var(--accent);font-weight:500}
+h2{font-size:clamp(32px,4.4vw,56px);line-height:1.07}
+h3{font-size:22px;line-height:1.25}
+p{margin:0}
+.lede{color:var(--muted);max-width:62ch;font-size:18px}
+.eyebrow{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--sky);opacity:.7}
+section{padding-block:88px;border-top:1px solid var(--line)}
+.head{display:flex;flex-direction:column;gap:18px;margin-bottom:44px}
+.chip{font-family:var(--mono);font-size:12px;padding:6px 12px;border:1px solid var(--line-hi);border-radius:999px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:10px}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top, 0px);z-index:10;background:var(--nav);backdrop-filter:blur(10px);border-bottom:1px solid #2E343D}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:11;background:#15181D}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font-weight:800;letter-spacing:1.5px;font-size:15px;text-decoration:none;color:#F5F4EF;white-space:nowrap}
+.logo span{color:#E3A93B}
+.links{display:flex;gap:8px;font-size:14px}
+.links a{text-decoration:none;padding:7px 14px;border-radius:999px;border:1px solid #4A5360;color:#D9DCE1;font-weight:500;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.links a:hover{border-color:#E3A93B;color:#F5F4EF}
+.links a.on{background:#E3A93B;border-color:#E3A93B;color:#15181D;font-weight:600}
+
+/* hero */
+.hero{border-top:0;padding-block:88px 72px}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:end}
+.hero-left{display:flex;flex-direction:column;gap:26px;min-width:0}
+.principle{--sky:#E3A93B;background:linear-gradient(160deg,#23684F 0%,#1A5240 100%);color:#F5F4EF;border:1px solid #2E7A63;border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:16px;box-shadow:0 24px 60px -28px rgba(35,104,79,.7)}
+.principle p.big{font-family:var(--display);font-size:27px;line-height:1.28;color:#F5F4EF}
+.principle p{color:#D6E7DF}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:56px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fact b{font-family:var(--display);font-size:34px;line-height:1.05;color:var(--accent);font-weight:600}
+.fact span{font-size:14px;color:var(--muted);line-height:1.45}
+.scope{margin-top:16px;border:1px solid var(--accent);border-radius:16px;padding:20px 24px;background:rgba(227,169,59,.08);display:flex;flex-direction:column;gap:6px}
+.scope b{font-family:var(--mono);font-size:12px;letter-spacing:1px;color:var(--accent);text-transform:uppercase}
+.scope p{color:var(--soft);font-size:15.5px}
+
+/* journey */
+.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:j}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 18px;display:flex;flex-direction:column;gap:10px;min-width:0;counter-increment:j}
+.step .k{font-family:var(--mono);font-size:11px;color:var(--sky);letter-spacing:1px}
+.step .k::before{content:"STEP 0" counter(j) " · "}
+.step b{font-size:16.5px;line-height:1.3}
+.step p{font-size:14px;color:var(--muted);line-height:1.5}
+.badge{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.5px;padding:4px 10px;border-radius:999px;white-space:nowrap;align-self:flex-start}
+.b-good{background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good)}
+.b-warn{background:color-mix(in srgb,var(--warn) 17%,transparent);color:var(--warn)}
+.b-bad{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+
+/* swot */
+.axis{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.axis span:first-child{color:var(--good)} .axis span:last-child{color:var(--bad)}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.quad{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.qh{display:flex;align-items:baseline;gap:14px;margin-bottom:4px}
+.qh .L{font-family:var(--display);font-size:56px;font-weight:600;line-height:.85}
+.qh small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-top:4px}
+.item{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;padding:12px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0}
+.dot{width:9px;height:9px;border-radius:50%;margin-top:8px;grid-row:span 2}
+.item b{font-weight:600;font-size:15.5px}
+.item span{color:var(--muted);font-size:14px;line-height:1.5}
+.q-s .L,.q-s .dot{color:var(--good);background:none}.q-s .dot{background:var(--good)}
+.q-w .L{color:var(--bad)}.q-w .dot{background:var(--bad)}
+.q-o .L{color:var(--accent)}.q-o .dot{background:var(--accent)}
+.q-t .L{color:var(--cool)}.q-t .dot{background:var(--cool)}
+.q-s{border-top:3px solid var(--good)} .q-w{border-top:3px solid var(--bad)} .q-o{border-top:3px solid var(--accent)} .q-t{border-top:3px solid var(--cool)}
+
+/* statement */
+.statement h2{font-size:clamp(34px,5.2vw,68px);max-width:20ch}
+.statement .lede{margin-top:22px;font-size:20px;color:var(--soft)}
+.statement .eyebrow::before{background:var(--fg)}
+
+/* front door */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ba figure{margin:0;display:flex;flex-direction:column;gap:12px;min-width:0}
+.ba .tagline{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+.ba figcaption{font-size:14.5px;color:var(--muted)}
+.phone{background:var(--panel);color:var(--panel-ink);border:2px solid var(--panel-line);border-radius:24px;padding:18px;display:flex;flex-direction:column;gap:11px;min-height:440px}
+.phone.after{border-color:#E3A93B;box-shadow:0 24px 60px -30px rgba(0,0,0,.45)}
+.m-logo{font-family:var(--display);font-weight:700;color:#C8164F;text-align:center;font-size:24px;letter-spacing:.06em;line-height:1}
+.m-logo small{display:block;font-family:var(--body);font-size:8px;letter-spacing:.24em;font-weight:600;margin-top:4px}
+.m-h{font-family:var(--display);font-weight:600;text-align:center;font-size:17px;line-height:1.25}
+.m-btn{border:1px solid var(--panel-line);border-radius:9px;padding:9px;text-align:center;font-size:12.5px;font-weight:600;background:#fff}
+.m-btn.pri{background:#15181D;color:#F5F4EF;border-color:#15181D}
+.m-fine{font-size:10.5px;color:var(--panel-muted);text-align:center}
+.m-blank{flex:1;border:1.5px dashed #C4BFB1;border-radius:12px;display:grid;place-items:center;color:var(--panel-muted);font-size:12.5px;text-align:center;padding:16px;min-height:160px}
+.m-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.m-chip{background:#F6E7C8;border-radius:8px;padding:7px 4px;font-size:10px;text-align:center;font-weight:600;line-height:1.25;color:#5A3A06}
+.m-steps{display:grid;gap:5px;font-size:11px}
+.m-steps div{display:flex;gap:7px;align-items:center}
+.m-steps i{font-style:normal;font-family:var(--mono);background:#E3A93B;color:#15181D;border-radius:50%;width:17px;height:17px;display:grid;place-items:center;font-size:9.5px;font-weight:600;flex:none}
+.m-proof{background:#DDF1E8;color:#1F6B51;border-radius:9px;padding:8px;font-size:10.5px;text-align:center;font-weight:500}
+.sections{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:44px}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.sec .k{font-family:var(--mono);font-size:11px;color:var(--sky);letter-spacing:1px;font-weight:600}
+.sec b{font-size:15.5px}
+.sec span{font-size:13.5px;color:var(--muted);line-height:1.45}
+.subhead{font-family:var(--display);font-size:26px;margin-top:52px}
+
+/* fix table */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);font-weight:600}
+td{color:var(--soft)}
+td:first-child{color:var(--fg);font-weight:500}
+tr:last-child td{border-bottom:0}
+.grp td{font-family:var(--display);font-weight:600;font-size:19px;color:var(--accent);background:var(--bg-2)}
+.pill{font-family:var(--mono);font-size:11px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.p-now{background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good)}
+.p-next{background:color-mix(in srgb,var(--warn) 17%,transparent);color:var(--warn)}
+.p-later{background:color-mix(in srgb,var(--cool) 16%,transparent);color:var(--cool)}
+code{font-family:var(--mono);font-size:.82em;background:var(--bg-2);border:1px solid var(--line);padding:1px 6px;border-radius:6px;white-space:nowrap}
+
+/* 90 days */
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.day{border-top:2px solid var(--sky);padding-top:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.day .k{font-family:var(--mono);font-size:12px;color:var(--sky);letter-spacing:1px;font-weight:600}
+.day ul{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--soft);font-size:15.5px}
+.day .out{margin-top:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--muted)}
+.day .out b{color:var(--fg)}
+
+/* measure */
+.ns{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:stretch}
+.ns .principle h3{font-size:32px;color:#F5F4EF}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.metric{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:4px}
+.metric .k{font-family:var(--mono);font-size:11px;color:var(--sky);letter-spacing:1px;font-weight:600}
+.metric b{font-size:16px}
+.metric span{font-size:14px;color:var(--muted)}
+.note{margin-top:16px;font-size:14px;color:var(--dim)}
+
+/* questions / close */
+.qs{margin:0;padding:0;list-style:none;display:grid;gap:0;counter-reset:q}
+.qs li{counter-increment:q;display:grid;grid-template-columns:52px 1fr;gap:12px;padding:16px 0;border-top:1px solid var(--line);font-size:19px;font-family:var(--display);line-height:1.35}
+.qs li:first-child{border-top:0}
+.qs li::before{content:"0" counter(q);font-family:var(--mono);font-size:13px;color:var(--sky);padding-top:5px}
+.pitch{margin-top:48px}
+.pitch p.big{font-size:24px}
+footer{border-top:1px solid var(--line);padding-block:28px;font-size:13px;color:var(--dim)}
+footer p{margin-bottom:6px}
+
+@media screen and (max-width:960px){
+  .journey{grid-template-columns:repeat(2,1fr)}
+  .sections{grid-template-columns:repeat(2,1fr)}
+  .facts{grid-template-columns:repeat(2,1fr)}
+}
+@media screen and (max-width:900px){
+  nav .wrap{flex-wrap:wrap;row-gap:10px}
+  .links{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .links::-webkit-scrollbar{display:none}
+  .links a{flex:none}
+  .hero-grid,.swot,.ba,.days,.ns{grid-template-columns:1fr}
+  .axis{display:none}
+  section{padding-block:60px}
+}
+@media screen and (max-width:560px){
+  .journey,.sections,.facts,.metrics{grid-template-columns:1fr}
+  .quad,.principle{padding:22px}
+  .phone{min-height:0}
+  .qs li{grid-template-columns:36px 1fr;font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* print: one chapter per A4 page, backgrounds kept */
+@media print{
+  @page{size:A4;margin:0}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html{background:#15181D}
+  body{zoom:.66}
+  nav,script{display:none!important}
+  section{--z:1;zoom:var(--z);break-before:page;break-inside:avoid;min-height:calc(297mm / (.66 * var(--z)));padding-block:64px;border-top:0;display:flex;flex-direction:column;justify-content:flex-start}
+  #top{--z:1.3} #journey{--z:1.32} #swot{--z:.86} .statement{--z:1.3} #frontdoor{--z:1.1}
+  #fixes{--z:.86} #plan{--z:1.38} #measure{--z:1.42} #ask{--z:1.25}
+  #journey .journey{grid-template-columns:1fr;gap:14px}
+  #journey .step{display:grid;grid-template-columns:190px 1fr;column-gap:28px;row-gap:8px;padding:24px 26px;align-items:start}
+  #journey .step .k{grid-column:1;grid-row:1}
+  #journey .step .badge{grid-column:1;grid-row:2}
+  #journey .step b{grid-column:2;grid-row:1;font-size:19px}
+  #journey .step p{grid-column:2;grid-row:2 / span 2;font-size:15.5px}
+  section.hero{break-before:auto}
+  section.statement{justify-content:center}
+  .wrap{width:100%;padding-left:64px;padding-right:64px}
+  footer{display:none}
+  .print-foot{display:block!important}
+}
+.print-foot{display:none;margin-top:40px;font-size:13px;color:var(--dim);border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+
+<nav aria-label="Sections"><div class="wrap">
+  <a class="logo" href="#top">WIN<span> · </span>CONNECT</a>
+  <div class="links">
+    <a href="#journey">First visit</a>
+    <a href="#swot">SWOT</a>
+    <a href="#frontdoor">Front door</a>
+    <a href="#fixes">Fix list</a>
+    <a href="#plan">90 days</a>
+    <a href="#measure">Measure</a>
+    <a href="#ask">Questions</a>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<section class="hero" id="top"><div class="wrap">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <span class="eyebrow">WIN Connect · a first look from outside</span>
+      <h1>WIN has already won the room. <em>Now let's win the app.</em></h1>
+      <div class="meta"><span class="chip">Prepared by Alisha Chaudhari</span><span class="chip">For Stuti Jalan, Founder, WIN</span><span class="chip">2 Nov 2026</span></div>
+    </div>
+    <div class="principle">
+      <span class="eyebrow">Operating principle</span>
+      <p class="big">People fly to Davos and Cannes because WIN is in the room. WIN Connect's job is to keep that trust working on the other 360 days of the year.</p>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact"><b>200+</b><span>conversations curated on world stages (WIN's own figure)</span></div>
+    <div class="fact"><b>6</b><span>global stages: Davos, Cannes, Climate Week NY, LCAW, Horasis, India AI Impact Summit</span></div>
+    <div class="fact"><b>~10K</b><span>women in the network across ~50 countries (launch coverage)</span></div>
+    <div class="fact"><b>Sept 2026</b><span>WIN Connect launched at Climate Week New York</span></div>
+  </div>
+  <div class="scope">
+    <b>What I looked at, and what I couldn't</b>
+    <p>I went through the public website, the WIN Connect sign-in page on laptop and phone, and the feature names the app shows publicly before sign-in. I did not sign in, so I haven't seen the inside of the app or any usage numbers. Everything here is how a brand-new visitor experiences WIN today. My first week on the job would be spent filling in what I couldn't see.</p>
+  </div>
+</div></section>
+
+<!-- JOURNEY -->
+<section id="journey" class="light"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">The journey, step by step</span>
+    <h2>What a new woman leader sees on her first visit</h2>
+  </div>
+  <div class="journey">
+    <div class="step"><span class="k">WEBSITE</span><span class="badge b-good">Works well</span><b>She lands on womeninspiringnetwork.com</b><p>"Join WIN Connect, our AI-powered opportunity app" sits right at the top, with Davos 2027 registration, the podcast and 40+ panel videos. Press logos (Times of India, Vogue, Hindustan Times, Business Today) build trust fast.</p></div>
+    <div class="step"><span class="k">JOIN</span><span class="badge b-warn">Confusing</span><b>She looks for how to join</b><p>Three different doors: the "Join Now" app button, an "Are you a woman leader?" Google Form and a long sign-up form. It isn't clear which one makes her a member.</p></div>
+    <div class="step"><span class="k">SIGN-IN</span><span class="badge b-bad">Drop-off risk</span><b>She clicks "Join Now" and hits a locked door</b><p>A welcome line, "Connect. Collaborate. Thrive." and one button, Continue with LinkedIn. Nothing says what's inside, who's there, what it costs or what happens to her data.</p></div>
+    <div class="step"><span class="k">PHONE</span><span class="badge b-warn">Slow</span><b>The page takes a while on her phone</b><p>About 3.8 MB of files load before she sees the button. The background photo alone is about 2 MB. On patchy mobile data, that's several seconds of blank screen.</p></div>
+    <div class="step"><span class="k">INSIDE</span><span class="badge b-good">Strong product</span><b>If she gets in, a lot is built already</b><p>From the app's own labels: Compass search, WIN Circles, Opportunities, Events with QR check-in, messages, and three plans: WIN Club, Elite and Lumina.</p></div>
+  </div>
+</div></section>
+
+<!-- SWOT -->
+<section id="swot"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">SWOT, in plain words</span>
+    <h2>Where WIN stands today</h2>
+    <p class="lede">Strengths and weaknesses are things inside WIN's control. Opportunities and threats are what's happening outside.</p>
+  </div>
+  <div class="axis" aria-hidden="true"><span>Helps WIN</span><span>Holds WIN back</span></div>
+  <div class="swot">
+    <div class="quad q-s">
+      <div class="qh"><span class="L">S</span><div><h3>Strengths</h3><small>What WIN is already good at</small></div></div>
+      <div class="item"><i class="dot"></i><b>A name people trust.</b><span>Presence at Davos, Cannes, Climate Week and UNGA week does what no ad budget can.</span></div>
+      <div class="item"><i class="dot"></i><b>A founder who knows storytelling.</b><span>23 years running a PR firm means press, partners and speakers come easily.</span></div>
+      <div class="item"><i class="dot"></i><b>A ready content library.</b><span>40+ panel videos and the WIN Voices podcast are content most apps would have to create from scratch.</span></div>
+      <div class="item"><i class="dot"></i><b>A product with real depth.</b><span>Search, Circles, Opportunities, Events, messaging and paid plans already exist.</span></div>
+      <div class="item"><i class="dot"></i><b>LinkedIn sign-in.</b><span>Joining is one tap, and every member is linked to a real professional profile, so fake accounts are harder to create.</span></div>
+    </div>
+    <div class="quad q-w">
+      <div class="qh"><span class="L">W</span><div><h3>Weaknesses</h3><small>What's holding it back</small></div></div>
+      <div class="item"><i class="dot"></i><b>The front door is a locked door.</b><span>The app's first screen doesn't explain what WIN Connect is or why to join.</span></div>
+      <div class="item"><i class="dot"></i><b>LinkedIn is the only way in.</b><span>Women who don't use LinkedIn, or don't want to link it, can't join at all.</span></div>
+      <div class="item"><i class="dot"></i><b>Too many ways to "join".</b><span>The app, a Google Form and a website form don't add up to one clear path.</span></div>
+      <div class="item"><i class="dot"></i><b>A heavy first load.</b><span>About 3.8 MB before the sign-in button appears is slow on phones.</span></div>
+      <div class="item"><i class="dot"></i><b>Shared links look blank.</b><span>The app link has no preview text or image on WhatsApp or LinkedIn.</span></div>
+      <div class="item"><i class="dot"></i><b>Life happens around events.</b><span>Energy peaks in Davos week, then quiets down. An app needs a reason to come back on a normal Tuesday.</span></div>
+    </div>
+    <div class="quad q-o">
+      <div class="qh"><span class="L">O</span><div><h3>Opportunities</h3><small>Where WIN can grow</small></div></div>
+      <div class="item"><i class="dot"></i><b>Make the app the "after-party" of every event.</b><span>The app already has QR check-in for events. Add "who you met" and follow-ups, and every lounge keeps paying off after the day ends. Davos 2027 is the perfect first test.</span></div>
+      <div class="item"><i class="dot"></i><b>Turn speakers into searchable members.</b><span>"Show me who spoke on gender-lens investing at Davos" becomes a real Compass search.</span></div>
+      <div class="item"><i class="dot"></i><b>A clear ladder of paid plans.</b><span>Club, Elite and Lumina can each promise something specific: access, intros, invitations.</span></div>
+      <div class="item"><i class="dot"></i><b>Corporate and partner memberships.</b><span>Organisations WIN already works with, such as Invest India, CII and the Cherie Blair Foundation for Women, could sponsor places for their women leaders.</span></div>
+      <div class="item"><i class="dot"></i><b>Funding matchmaking.</b><span>The app already captures funding asks from $50K to $50M+, which family offices and foundations want to browse.</span></div>
+    </div>
+    <div class="quad q-t">
+      <div class="qh"><span class="L">T</span><div><h3>Threats</h3><small>What could hurt WIN</small></div></div>
+      <div class="item"><i class="dot"></i><b>Women already have networks.</b><span>LinkedIn, Lean In Circles, Chief and WhatsApp groups compete for the same evening hour.</span></div>
+      <div class="item"><i class="dot"></i><b>Senior women's time is precious.</b><span>A few weak or spammy AI intros, and top members go quiet. Once they leave, the network loses its pull.</span></div>
+      <div class="item"><i class="dot"></i><b>Data and privacy rules.</b><span>AI drafting intros from profile data has to follow India's DPDP Act and Europe's GDPR, with clear consent.</span></div>
+      <div class="item"><i class="dot"></i><b>Relying on LinkedIn.</b><span>If LinkedIn changes its sign-in rules, WIN's only front door closes.</span></div>
+      <div class="item"><i class="dot"></i><b>Mission vs money.</b><span>WIN is a not-for-profit movement that now has paid plans. The story has to explain why both can be true.</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- STATEMENT -->
+<section class="statement accentsec"><div class="wrap">
+  <span class="eyebrow">The one-line diagnosis</span>
+  <h2 style="margin-top:22px">The problem isn't the product. It's that nobody can see it from outside.</h2>
+  <p class="lede">WIN Connect is weeks old and already has search, circles, opportunities, events, chat and paid plans. The fastest win is not building more. It is opening the front door so the right women walk in.</p>
+</div></section>
+
+<!-- FRONT DOOR -->
+<section id="frontdoor" class="light"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">The single biggest improvement</span>
+    <h2>Open the front door before asking her to sign in</h2>
+    <p class="lede">Today the app asks for trust first and explains later. I'd flip that order. Here's a rough sketch of the same phone screen, today and after.</p>
+  </div>
+  <div class="ba">
+    <figure>
+      <span class="tagline" style="color:var(--bad)">Today</span>
+      <div class="phone" aria-label="Sketch of today's sign-in screen">
+        <div class="m-logo">W♀N<small>WOMEN INSPIRING NETWORK</small></div>
+        <div class="m-h">WELCOME TO WOMEN<br>INSPIRING NETWORK</div>
+        <div class="m-fine">CONNECT. COLLABORATE. THRIVE.</div>
+        <div class="m-btn">in &nbsp;Continue with LinkedIn</div>
+        <div class="m-fine">By clicking you agree to T&amp;C</div>
+        <div class="m-blank">What is inside? Who is here?<br>What does it cost? What happens to my data?<br><br>No answers before sign-in.</div>
+      </div>
+      <figcaption>One button and no reasons. Fine for people who already know WIN, a wall for everyone else.</figcaption>
+    </figure>
+    <figure>
+      <span class="tagline" style="color:var(--good)">Proposed</span>
+      <div class="phone after" aria-label="Sketch of a proposed public landing screen">
+        <div class="m-logo">W♀N<small>WIN CONNECT</small></div>
+        <div class="m-h">Meet the women who can open your next door.</div>
+        <div class="m-row">
+          <div class="m-chip">Compass<br>find people</div>
+          <div class="m-chip">Circles<br>your groups</div>
+          <div class="m-chip">Opportunity<br>get intros</div>
+          <div class="m-chip">Events<br>Davos &amp; more</div>
+        </div>
+        <div class="m-steps">
+          <div><i>1</i>Sign in with LinkedIn in one tap</div>
+          <div><i>2</i>Tell us what you're building</div>
+          <div><i>3</i>Get 3 introductions this week</div>
+        </div>
+        <div class="m-proof">~10K women · 50 countries · seen at Davos, Cannes, UNGA</div>
+        <div class="m-btn pri">Continue with LinkedIn</div>
+        <div class="m-btn">Use my email instead</div>
+        <div class="m-fine">We never post to your LinkedIn · Plans from free</div>
+      </div>
+      <figcaption>Same brand, same button, but she knows why to press it. These are sketch words for discussion, not final copy.</figcaption>
+    </figure>
+  </div>
+  <h3 class="subhead">Sections I'd add to the public WIN Connect page</h3>
+  <div class="sections" style="margin-top:20px">
+    <div class="sec"><span class="k">PROMISE</span><b>One line on what it does</b><span>"Meet the women who can open your next door." Understood in five seconds.</span></div>
+    <div class="sec"><span class="k">HOW IT WORKS</span><b>Three simple steps</b><span>Sign in, say what you're building, get introductions.</span></div>
+    <div class="sec"><span class="k">FEATURES</span><b>The four tools, one line each</b><span>Compass, Circles, Opportunity, Events, each with a small screenshot.</span></div>
+    <div class="sec"><span class="k">PROOF</span><b>Who is already inside</b><span>Faces and quotes from members who've agreed, plus event logos.</span></div>
+    <div class="sec"><span class="k">PLANS</span><b>Club vs Elite vs Lumina</b><span>A simple side-by-side of what each plan gets you.</span></div>
+    <div class="sec"><span class="k">NEXT EVENT</span><b>Davos 2027 starts here</b><span>"Attending? Join first and arrive knowing who you'll meet."</span></div>
+    <div class="sec"><span class="k">TRUST</span><b>Your data, in plain words</b><span>What we take from LinkedIn, what the AI does, and that we never post for you.</span></div>
+    <div class="sec"><span class="k">FAQ</span><b>The five questions people ask</b><span>Who can join, is it free, is it only India, how intros are chosen, how to leave.</span></div>
+  </div>
+</div></section>
+
+<!-- FIXES -->
+<section id="fixes"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">What I'd fix, in what order</span>
+    <h2>Small fixes first, bigger ideas after</h2>
+    <p class="lede">I put the easy, high-impact jobs first. The first group is small and could be done in the first two weeks. The bigger ideas come once we know what members actually do.</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>What I'd do</th><th>Why it helps, in everyday words</th><th>When</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Small fixes · first two weeks</td></tr>
+        <tr><td>Add a few lines on the sign-in page saying what WIN Connect is and who it's for</td><td>Today people see one LinkedIn button and nothing else. A short explanation gives them a reason to press it.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr><td>Make the app link show a title, a line of text and a picture when it's shared</td><td>Right now, sharing the link on WhatsApp or LinkedIn shows an almost empty box. With a proper preview, every share works like a free advert.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr><td>Make the sign-in page load faster on phones</td><td>The background photo alone is about 2 MB. A lighter photo means women on mobile data aren't left looking at a blank screen.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr><td>Check that visitor numbers are being recorded correctly</td><td>A setting in the page's tracking code was left as a placeholder. It may still work through a backup, but we should confirm it before we trust any numbers.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr><td>Give people one clear way to join, not three</td><td>Today there's the app button, a Google Form and a website form. One path means nobody gets lost, and we can count every new member.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr><td>Tidy small website details, such as the same panel video appearing more than once</td><td>Small things, but this audience notices polish.</td><td><span class="pill p-now">Weeks 1–2</span></td></tr>
+        <tr class="grp"><td colspan="3">Next · months 1–2</td></tr>
+        <tr><td>A proper public page for WIN Connect</td><td>Visitors can see what's inside, who's there and what each plan offers before they sign in.</td><td><span class="pill p-next">Month 1–2</span></td></tr>
+        <tr><td>Let people sign in with email too, not only LinkedIn</td><td>Some women don't use LinkedIn or don't want to link it. This also means WIN doesn't depend on one outside company.</td><td><span class="pill p-next">Month 1–2</span></td></tr>
+        <tr><td>A simple first-week welcome: finish your profile, join one Circle, make one connection</td><td>People who get something useful in their first week are the ones who come back.</td><td><span class="pill p-next">Month 1–2</span></td></tr>
+        <tr><td>After every suggested connection, ask "Was this useful?" with one tap</td><td>The app already collects feedback on its suggestions. Making it one tap tells us what a good match looks like, and keeps senior members from getting weak intros.</td><td><span class="pill p-next">Month 1–2</span></td></tr>
+        <tr class="grp"><td colspan="3">Bigger ideas · first quarter</td></tr>
+        <tr><td>Make Davos 2027 run through the app: check in, see who you met, follow up</td><td>The app already has QR check-in for events. Adding "who you met" and follow-up reminders keeps the Davos connections going for the rest of the year.</td><td><span class="pill p-later">Quarter 1</span></td></tr>
+        <tr><td>Put past speakers in the app so members can find them</td><td>WIN has hosted 200+ conversations. The speakers from them become people members can search for and reach.</td><td><span class="pill p-later">Quarter 1</span></td></tr>
+        <tr><td>Make it clear what each plan gives you, and offer company-sponsored places</td><td>Members can see why to upgrade. Partner organisations can pay for their women leaders to join, which brings in money for the mission.</td><td><span class="pill p-later">Quarter 1</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
+
+<!-- 90 DAYS -->
+<section id="plan" class="light"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">If I join</span>
+    <h2>My first 90 days as WIN Connect's Product Manager</h2>
+    <p class="lede">Listen first, fix what's obvious, then build the one loop that matters most: event, then app, then introduction, then a real business outcome.</p>
+  </div>
+  <div class="days">
+    <div class="day"><span class="k">DAYS 01–30</span><h3>Listen and learn</h3>
+      <ul><li>Sit with you to agree on the one thing WIN Connect must do for members this year.</li>
+      <li>Talk to 15 members across Club, Elite and Lumina, plus 5 who signed up and went quiet.</li>
+      <li>Meet Sales, Marketing, Support and Ops, and put everything they ask for into one backlog.</li>
+      <li>Get tracking working so we have honest numbers.</li>
+      <li>Ship the quick wins.</li></ul>
+      <p class="out"><b>You get:</b> a one-page product goal, a ranked backlog and a baseline of today's numbers.</p></div>
+    <div class="day"><span class="k">DAYS 31–60</span><h3>Open the door</h3>
+      <ul><li>Launch the public landing page and the single join path.</li>
+      <li>Add email sign-in and the first-week welcome.</li>
+      <li>Add a one-tap "was this useful?" after every suggested connection.</li>
+      <li>Settle a steady sprint rhythm, with clear user stories and acceptance checks the team agrees on.</li></ul>
+      <p class="out"><b>You get:</b> more visitors becoming members, and more members active in week one.</p></div>
+    <div class="day"><span class="k">DAYS 61–90</span><h3>Win Davos 2027</h3>
+      <ul><li>Use the app's existing QR check-in at the Davos Lounge on 21 January, and add who-you-met and follow-ups.</li>
+      <li>Put speaker profiles in Compass.</li>
+      <li>Test the plan ladder with real members before pricing at scale.</li>
+      <li>Send a monthly one-page update on what we shipped, what moved and what's next.</li></ul>
+      <p class="out"><b>You get:</b> proof that event energy turns into lasting connections, and a story for partners and funders.</p></div>
+  </div>
+</div></section>
+
+<!-- MEASURE -->
+<section id="measure"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">How we'd know it's working</span>
+    <h2>One number to steer by</h2>
+  </div>
+  <div class="ns">
+    <div class="principle">
+      <span class="eyebrow">North Star</span>
+      <h3>Useful connections made each month</h3>
+      <p>An introduction that both women accepted, and at least one said was useful. It measures exactly what WIN promises, the right woman meeting the right woman. It's hard to fake with clicks or sign-ups.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span class="k">ACTIVATION</span><b>New members who get started</b><span>Profile done and one connection in the first 7 days</span></div>
+      <div class="metric"><span class="k">QUALITY</span><b>Intro acceptance</b><span>How many suggested introductions both sides say yes to</span></div>
+      <div class="metric"><span class="k">HABIT</span><b>Monthly active members</b><span>Especially in the months between events</span></div>
+      <div class="metric"><span class="k">REVENUE</span><b>Paid upgrades</b><span>Club to Elite to Lumina, and corporate seats</span></div>
+    </div>
+  </div>
+  <p class="note">These are proposals for discussion. I'd set the targets after seeing the real numbers in month one.</p>
+</div></section>
+
+<!-- CLOSE -->
+<section class="light" id="ask"><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">For our conversation</span>
+    <h2>What I'd love to ask you</h2>
+  </div>
+  <ol class="qs">
+    <li>A year from now, what would make you say "WIN Connect worked"?</li>
+    <li>Who is the member you most want to delight first: the rising founder, the senior leader or the partner organisation?</li>
+    <li>How do you see the not-for-profit mission and the paid plans fitting together in the story you tell?</li>
+    <li>What have members told you since the September launch that surprised you?</li>
+    <li>For Davos 2027, what would a great result look like for the app?</li>
+  </ol>
+  <div class="principle pitch">
+    <span class="eyebrow">If I had 60 seconds</span>
+    <p class="big">"WIN has already done the hardest thing a network can do, which is earn trust. WIN Connect has strong tools inside, but today a new visitor meets a locked door. My first job would be to open that door. Then I'd make every WIN event feed the app, and judge my work by one thing: how many useful connections we create each month."</p>
+  </div>
+  <div class="print-foot">Sources: womeninspiringnetwork.com, the public WIN Connect sign-in page (desktop and phone), the app's publicly loaded labels, Stuti Jalan's LinkedIn profile, the WIN Product Manager JD and coverage of the September 2026 launch. Reviewed 2 Nov 2026. I did not sign in, so this covers only what a new visitor can see.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Sources: womeninspiringnetwork.com, the public WIN Connect sign-in page at womeninspiringnetwork.app (desktop and phone), the app's publicly loaded labels, Stuti Jalan's LinkedIn profile, the WIN Product Manager job description and public coverage of the September 2026 launch. Reviewed 2 Nov 2026.</p>
+  <p>I did not sign in, so this covers only what a new visitor can see. Page sizes were measured in a browser and may vary by device.</p>
+</div></footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.links a'));
+  var bar=document.querySelector('.links');
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      links.forEach(function(l){l.classList.remove('on')});
+      var a=map[e.target.id];
+      if(a){a.classList.add('on'); if(bar.scrollWidth>bar.clientWidth){bar.scrollLeft=a.offsetLeft-bar.clientWidth/2+a.offsetWidth/2;}}
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s)});
+})();
+</script>
+</body>
+</html>
