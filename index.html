@@ -80,12 +80,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .fact b{font-family:var(--display);font-size:34px;line-height:1.05;color:var(--accent);font-weight:600}
 .fact span{font-size:14px;color:var(--muted);line-height:1.45}
-.scope{margin-top:16px;border:1px solid var(--accent);border-radius:16px;padding:20px 24px;background:rgba(227,169,59,.08);display:flex;flex-direction:column;gap:6px}
-.scope b{font-family:var(--mono);font-size:12px;letter-spacing:1px;color:var(--accent);text-transform:uppercase}
-.scope p{color:var(--soft);font-size:15.5px}
 
 /* journey */
-.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:j}
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:j}
 .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 18px;display:flex;flex-direction:column;gap:10px;min-width:0;counter-increment:j}
 .step .k{font-family:var(--mono);font-size:11px;color:var(--sky);letter-spacing:1px}
 .step .k::before{content:"STEP 0" counter(j) " · "}
@@ -273,10 +270,6 @@ footer p{margin-bottom:6px}
     <div class="fact"><b>~10K</b><span>women in the network across ~50 countries (as reported at launch)</span></div>
     <div class="fact"><b>Sept 2026</b><span>WIN Connect launched at Climate Week New York</span></div>
   </div>
-  <div class="scope">
-    <b>What I looked at, and what I couldn't</b>
-    <p>I went through the public website, the WIN Connect sign-in page on laptop and phone, and the feature names the app shows publicly before sign-in. I did not sign in, so I haven't seen the inside of the app or any usage numbers. Everything here is how a brand-new visitor experiences WIN today. The app's code is also built to run on iPhone and Android. I couldn't confirm a store version, so the loading and link-preview points below are about the web version. My first week on the job would be spent filling in what I couldn't see.</p>
-  </div>
 </div></section>
 
 <!-- JOURNEY -->
@@ -289,7 +282,6 @@ footer p{margin-bottom:6px}
     <div class="step"><span class="k">WEBSITE</span><span class="badge b-good">Works well</span><b>She lands on womeninspiringnetwork.com</b><p>"Join WIN Connect, our AI-powered opportunity app" sits right at the top, with Davos 2027 registration, the podcast and 40+ panel videos. Press logos (Times of India, Vogue, Hindustan Times, Business Today) build trust fast.</p></div>
     <div class="step"><span class="k">JOIN</span><span class="badge b-warn">Confusing</span><b>She looks for how to join</b><p>She sees several calls to action: the "Join Now" app button, an "Are you a woman leader?" form and newsletter sign-ups. Each has its own purpose, but a newcomer can't easily tell which one makes her a member.</p></div>
     <div class="step"><span class="k">SIGN-IN</span><span class="badge b-bad">Drop-off risk</span><b>She clicks "Join Now" and sees only a sign-in button</b><p>A welcome line, "Connect. Collaborate. Thrive." and one button, Continue with LinkedIn. Nothing says what's inside, who's there, what it costs or what happens to her data.</p></div>
-    <div class="step"><span class="k">PHONE</span><span class="badge b-warn">Slow</span><b>On the web, the sign-in page is slow on phones</b><p>About 3 MB downloads before she sees the button, and about 2 MB of that is one background photo. On patchy mobile data, that's several seconds of blank screen.</p></div>
     <div class="step"><span class="k">INSIDE</span><span class="badge b-good">Strong product</span><b>If she gets in, a lot is built already</b><p>From the app's own labels: Compass search, WIN Circles, Opportunities, Events with QR check-in, messages, and three plans: WIN Club, Elite and Lumina.</p></div>
   </div>
 </div></section>
@@ -316,7 +308,6 @@ footer p{margin-bottom:6px}
       <div class="item"><i class="dot"></i><b>The first screen doesn't explain itself.</b><span>The sign-in page doesn't yet say what WIN Connect is or why to join.</span></div>
       <div class="item"><i class="dot"></i><b>LinkedIn is the only way in, for now.</b><span>Women who don't use LinkedIn, or don't want to link it, can't join yet. The code already has Google and Apple sign-in buttons written, so this looks like it's on the way.</span></div>
       <div class="item"><i class="dot"></i><b>Several calls to action.</b><span>The app button, a Google Form and newsletter sign-ups each have a purpose, but a newcomer can't tell which one makes her a member.</span></div>
-      <div class="item"><i class="dot"></i><b>A heavy first load.</b><span>About 3 MB, mostly one photo, downloads before the web sign-in button appears.</span></div>
       <div class="item"><i class="dot"></i><b>Shared links look bare.</b><span>The web app link shows only a title, with no description or image, on WhatsApp or LinkedIn.</span></div>
       <div class="item"><i class="dot"></i><b>Life happens around events.</b><span>Energy peaks in Davos week, then quiets down. An app needs a reason to come back on a normal Tuesday.</span></div>
     </div>
@@ -417,7 +408,6 @@ footer p{margin-bottom:6px}
         <tr class="grp"><td colspan="3">Small fixes · month 1</td></tr>
         <tr><td>Add a few lines on the sign-in page saying what WIN Connect is and who it's for</td><td>Today people see one LinkedIn button and nothing else. A short explanation gives them a reason to press it.</td><td><span class="pill p-now">Month 1</span></td></tr>
         <tr><td>Make the app link show a title, a line of text and a picture when it's shared</td><td>Right now, sharing the link on WhatsApp or LinkedIn shows just a title. With a description and picture, every share works like a free advert.</td><td><span class="pill p-now">Month 1</span></td></tr>
-        <tr><td>Make the web sign-in page load faster on phones</td><td>About 2 MB of the roughly 3 MB is one background photo. A lighter photo means women on mobile data aren't left looking at a blank screen.</td><td><span class="pill p-now">Month 1</span></td></tr>
         <tr><td>Check that visitor numbers are being recorded correctly</td><td>A setting in the page's tracking code was left as a placeholder. It may still work through a backup, but we should confirm it before we trust any numbers.</td><td><span class="pill p-now">Month 1</span></td></tr>
         <tr><td>Make "Join WIN Connect" the one clear main button on the website</td><td>The Google Form and newsletter can stay for what they're for. A newcomer just needs to know which button makes her a member, and we can count every new member.</td><td><span class="pill p-now">Month 1</span></td></tr>
         <tr><td>Tidy small website details, such as the same panel video appearing more than once</td><td>Small things, but this audience notices polish.</td><td><span class="pill p-now">Month 1</span></td></tr>
@@ -505,12 +495,11 @@ footer p{margin-bottom:6px}
     <span class="eyebrow">If I had 60 seconds</span>
     <p class="big">"WIN has already done the hardest thing a network can do, which is earn trust. WIN Connect has strong tools inside, but today a new visitor can't see what's inside before signing in. My first job would be to show them. Then I'd make every WIN event feed the app, and judge my work by one thing: how many useful connections we create each month."</p>
   </div>
-  <div class="print-foot">Sources: womeninspiringnetwork.com, the public WIN Connect sign-in page (desktop and phone), the app's publicly loaded labels, Stuti Jalan's LinkedIn profile, the WIN Product Manager JD and coverage of the September 2026 launch. Reviewed 2 Nov 2026. I did not sign in, so this covers only what a new visitor can see.</div>
+  <div class="print-foot">Sources: womeninspiringnetwork.com, the public WIN Connect sign-in page (desktop and phone), the app's publicly loaded labels, Stuti Jalan's LinkedIn profile, the WIN Product Manager JD and coverage of the September 2026 launch. Reviewed 2 Nov 2026.</div>
 </div></section>
 
 <footer><div class="wrap">
   <p>Sources: <a href="https://www.womeninspiringnetwork.com/">womeninspiringnetwork.com</a> (including the <a href="https://www.womeninspiringnetwork.com/about-us/">About</a> and <a href="https://www.womeninspiringnetwork.com/win-at-davos-2027/">Davos 2027</a> pages), the public <a href="https://womeninspiringnetwork.app/">WIN Connect sign-in page</a> (desktop and phone), the app's publicly loaded labels, Stuti Jalan's LinkedIn profile, the WIN Product Manager job description and <a href="https://www.hindustantimes.com/world-news/us-news/aipowered-platform-for-women-leaders-launched-in-us-101791329174432.html">Hindustan Times coverage of the launch</a>. Reviewed 2 Nov 2026.</p>
-  <p>I did not sign in, so this covers only what a new visitor can see. Page sizes are compressed download sizes and may vary by device.</p>
 </div></footer>
 
 <script>
